@@ -19,22 +19,32 @@
 
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: normal;
     font-style: normal;
-
+    height: 100vh;
+    background-color: var(--Grey100);
 }
+
 
 div.container-form{
+    background-color: var(--White);
+}
+
+.form-group{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 20px;
 
 }
-form{
 
-}
 form .container-fields{
-
+    margin: 10px;
+    font-size: 30px;
 }
 
 form .container-fields .lbl-age{
-
+    color: var(--Grey500);
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
