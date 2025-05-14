@@ -94,6 +94,10 @@ form .container-fields > input{
     color: blue !important;
 }
 
+.error-message{
+    color: red;
+}
+
 @media (max-width:1221px) {
     .form-group{
         flex-direction: column;
