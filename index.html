@@ -12,10 +12,11 @@
 <body>
 
   <div class="container-form">
+    
     <form class="form-group">
       <div class="container-fields">
         <label for="day" class="lbl-age">Day</label><br>
-        <input type="text" name="day" id="day" placeholder="DD" maxlength="2" pattern="\d{2}" required>
+        <input type="text" name="day" id="day" placeholder="DD" maxlength="2" pattern="\d{2}"required>
       </div>
       
       <div class="container-fields">
@@ -29,17 +30,35 @@
       </div>
     </form>
 
+    <div class="division">
+      <hr><button class="btnCalc" id="btnCalc"><img src="assets/images/icon-arrow.svg" alt=""></button>
+    </div>
+
     <div class="view-age">
-      <p>-- years</p>
-      <p>-- months</p>
-      <p>-- days</p>
+      
+      <p class="text-age">
+        <span id="text-years" class="text-age__active">--</span> years
+      </p>
+      
+      <p class="text-age">
+        <span id="text-months" class="text-age__active">--</span> months
+      </p>
+      
+      <p class="text-age">
+        <span id="text-days" class="text-age__active">--</span>days
+      </p>
+
+      <div id="resultado" style="font-size: 30px;">
+
+      </div>
+      
     </div>
   </div> 
-
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
