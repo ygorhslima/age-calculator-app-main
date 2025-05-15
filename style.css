@@ -90,12 +90,25 @@ form .container-fields > input{
 }
 
 
-.text-age__active{
-    color: blue !important;
+/* Estilo para a mensagem de erro (já deve existir ou adapte) */
+.error-message {
+    color: hsl(0, 100%, 67%); /* Cor vermelha */
+    font-size: 0.75rem;
+    margin-top: 5px;
+    display: block;
+    font-style: italic;
 }
 
-.error-message{
-    color: red;
+/* Nova classe para inputs com erro */
+.input-error {
+    border-color: hsl(0, 100%, 67%) !important; /* Borda vermelha para inputs com erro */
+}
+
+.label-error {
+    color: hsl(0, 100%, 67%) !important; /* Texto vermelho para labels com erro */
+}
+.text-age--invalid {
+    color: hsl(0, 100%, 67%); /* Vermelho para números inválidos */
 }
 
 @media (max-width:1221px) {
